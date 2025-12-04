@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #262626;
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo {
+  flex-basis: 300px;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 300px;
+}
+
+.contact-btn {
+}
