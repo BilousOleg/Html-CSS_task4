@@ -37,6 +37,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   flex-grow: 1;
   flex-basis: 700px;
   gap: 25px;
@@ -49,10 +50,19 @@ a {
 }
 
 .navigation-menu {
-  display: flex;
   flex-grow: 0.5;
-  gap: 30px;
+  font-size: 0;
+  text-wrap: nowrap; /* no-wrap для того, щоб елементи не переносились далі, на наступні рядки, адже в них стоять margin'и, які будуть виглядати досить дивно */
   text-transform: uppercase;
+}
+
+.navigation-menu > li {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.navigation-menu > li + li {
+  margin-left: 30px;
 }
 
 .navigation-menu a:hover {
